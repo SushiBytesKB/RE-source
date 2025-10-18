@@ -46,5 +46,4 @@ function collectInput() {
 //     myBox.classList.remove('hidden-box');
 // }
 
-
 }
