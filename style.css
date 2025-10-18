@@ -5,21 +5,21 @@
  }
 
  body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Orbitron', sans-serif;
      background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);
      color: #e0e7ff;
      min-height: 100vh;
  }
 
- header {
-     background: rgba(10, 22, 40, 0.8);
+ /* header {
+     background: var(--headerbackground);
      backdrop-filter: blur(10px);
      padding: 1.5rem 2rem;
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+     box-shadow: 0 4px 6px #0000004d;
      position: sticky;
      top: 0;
      z-index: 100;
- }
+ } */
 
  nav {
      max-width: 1200px;
