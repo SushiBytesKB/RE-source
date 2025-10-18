@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE-source | AI-Powered Material Discovery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Added Chart.js library for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RE-source</h1>
+      <h2>AI-Powered Material Discovery Engine</h2>
+
+      <!-- The form is now structured in cards for a clean, step-by-step layout -->
+      <div class="cards">
+        <div class="card">
+          <h3><label for="llmModel">1. Select LLM Profile</label></h3>
+          <select id="llmModel" name="llmModel">
+            <option value="ChatGPT (GPT-4o)">ChatGPT (GPT-4o)</option>
+            <option value="Gemini 1.5 Pro">Gemini 1.5 Pro</option>
+            <option value="Llama 3 70B">Llama 3 70B</option>
+          </select>
+        </div>
+        <div class="card">
+          <h3><label for="budgetCap">2. Max Upfront Cost Impact (%)</label></h3>
+          <input
+            type="number"
+            id="budgetCap"
+            name="budgetCap"
+            placeholder="e.g., 10"
+            value="15"
+          />
+        </div>
+        <div class="card">
+          <h3>
+            <label for="emissionsMin">3. Min. Emissions Reduction (%)</label>
+          </h3>
+          <input
+            type="number"
+            id="emissionsMin"
+            name="emissionsMin"
+            placeholder="e.g., 20"
+            value="20"
+          />
+        </div>
+        <div class="card">
+          <h3>
+            <label for="replacementPercentage"
+              >4. Component Replacement Scope (%)</label
+            >
+          </h3>
+          <input
+            type="number"
+            id="replacementPercentage"
+            name="replacementPercentage"
+            placeholder="e.g., 100"
+            value="100"
+          />
+        </div>
+      </div>
+
+      <section class="hero">
+        <button onclick="getPredictions()" class="btn" id="submitBtn">
+          Analyze Materials
+        </button>
+      </section>
+
+      <!-- The results area is now properly structured and initially hidden -->
+      <div id="resultsBox" class="hidden-box">
+        <h2>Analysis Complete</h2>
+        <div class="contentcards">
+          <!-- The list of recommended materials will be dynamically inserted here -->
+          <div class="contentcard" id="resultsList">
+            <h3>Recommended Materials</h3>
+            <p>No analysis has been run yet.</p>
+          </div>
+          <!-- The comparison chart will be rendered in this canvas -->
+          <div class="contentcard" id="chartCard">
+            <canvas id="resultsChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 RE-source. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
