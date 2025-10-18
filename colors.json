@@ -2,5 +2,14 @@
   "primary-color": "#007bff",
   "secondary-color": "#6c757d",
   "success-color": "#28a745",
-  "danger-color": "#dc3545"
+  "danger-color": "#dc3545",
+
+  "header1-color": "3c8c64f2",
+  "header2-color": "64a078e6",
+  "text-color": "28322df2",
+  "main-background-color": "linear-gradient(45deg, #60a5fa, #f0faf5fa)",
+  "card-background-color": "fffffff2",
+  "card-header-color": "46966ee6",
+  "input-textfield-color": "fafffcf2",
+  "button-color": "5082aaf2"
 }
