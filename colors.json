@@ -1,0 +1,29 @@
+{
+  "bg-dark-start": "#0a1628",
+  "bg-dark-end": "#1e3a5f",
+  "bg-card-input": "rgba(30, 58, 95, 0.6)",
+  "bg-footer": "rgba(10, 22, 40, 0.9)",
+  "text-primary": "#e0e7ff",
+  "text-secondary": "#bfdbfe",
+  "text-label-placeholder": "#93c5fd",
+
+  "button-primary-start": "#2563eb",
+  "button-primary-end": "#1d4ed8",
+  "border-base-light": "rgba(96, 165, 250, 0.2)",
+  "border-input": "rgba(96, 165, 250, 0.3)",
+  "border-hover": "rgba(96, 165, 250, 0.5)",
+  "border-focus": "#60a5fa",
+  "shadow-button-base": "rgba(37, 99, 235, 0.4)",
+  "shadow-button-hover": "rgba(37, 99, 235, 0.6)",
+  "shadow-card-hover": "rgba(37, 99, 235, 0.3)",
+  "shadow-focus-ring": "rgba(96, 165, 250, 0.2)",
+
+  "header1-color": "#dbeafe",
+  "header2-color": "#93c5fd",
+  "text-color": "28322df2",
+  "main-background-color": "linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%)",
+  "card-background-color": "#1e3a5f99",
+  "card-header-color": "#60a5fa33",
+  "input-textfield-color": "fafffcf2",
+  "button-color": "#2563eb"
+}
