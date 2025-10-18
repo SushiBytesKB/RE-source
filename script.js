@@ -18,11 +18,17 @@ function collectInput() {
     
     const inputBudget = document.getElementById('BudgetCap'); 
     const inputEmissions = document.getElementById('ExpectedEmissions');
-    //need the third value
-    // document.getElementById('output').textContent = "Submitted";
 
-    const myBox = document.getElementById('myBox');
+    if(inputBudget == null || inputEmissions == null)
+    {
+        document.getElementById('output').textContent = "Something not correct...";
 
-    myBox.classList.remove('hidden-box');
+    }
+    else
+    {
+        const myBox = document.getElementById('myBox');
+
+        myBox.classList.remove('hidden-box');
+    }
     
 }
