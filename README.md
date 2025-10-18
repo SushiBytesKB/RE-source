@@ -2,17 +2,17 @@ RE-source: AI-Powered Material Discovery Engine
 
 RE-source is a modern, data-driven web application designed to optimize material selection for engineering and manufacturing projects. Instead of relying on traditional catalogs, this engine uses a machine learning model to instantly recommend the best materials based on three critical business metrics.
 
-🎯 Project Goal
+Project Goal
 
 To provide actionable, data-backed material recommendations that help users:
 
-Reduce Cost Impact 💰
+Reduce Cost Impact 
 
-Lower Emissions 📉
+Lower Emissions 
 
-Maximize Performance Gain 🚀
+Maximize Performance Gain 
 
-💻 How It Works
+How It Works
 
 The application follows a simple, yet powerful three-step process:
 
