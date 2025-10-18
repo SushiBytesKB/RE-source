@@ -9,17 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    
+
 </head>
 <body>
-    <header>
-        <nav>
-            <!-- <div class="logo">RE-source</div> -->
-        </nav>
-    </header>
 
     <div class="container">
         <h1>RE-source</h1>
+        <h2>AI powered material discovery engine</h2>
         <div class="cards">
             <div class="card">
                 <form>
@@ -45,8 +41,12 @@
         </div>
 
         <section class="hero">
-            <a href="#" class="btn">Submit</a>
+            <button onclick="collectInput()" class="btn">Submit</button>
         </section>
+        <div class = "output">
+             <p id = "output"></p>
+        </div>
+       
     </div>
 
     <footer>

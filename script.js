@@ -7,3 +7,11 @@
         }
       })
       .catch(error => console.error('Error fetching colors:', error));
+    
+
+  function collectInput()
+  {
+    const inputBudget = document.getElementById('BudgetCap');
+    const inputEmissions = document.getElementById('ExpectedEmissions');
+    document.getElementById('output').textContent = "Submitted";
+  }
