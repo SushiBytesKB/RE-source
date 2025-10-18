@@ -36,7 +36,7 @@ def generate_content():
         print(response.text)
         
         # Return the AI's JSON response back to the frontend
-        return jsonify(response.text)
+        return jsonify({"colors" : response.text})
 
     except Exception as e:
         print(f"Error: {e}")
