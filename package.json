@@ -1,0 +1,21 @@
+{
+  "name": "re-source",
+  "version": "1.0.0",
+  "description": "lol\r My changes",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SushiBytesKB/RE-source.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SushiBytesKB/RE-source/issues"
+  },
+  "homepage": "https://github.com/SushiBytesKB/RE-source#readme"
+}
