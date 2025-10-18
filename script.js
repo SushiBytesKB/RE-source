@@ -1,12 +1,18 @@
- fetch('colors.json')
-      .then(response => response.json())
-      .then(colors => {
-        for (const key in colors) {
-          document.documentElement.style.setProperty(`--${key}`, colors[key]);
-        }
-      })
-      .catch(error => console.error('Error fetching colors:', error));
-    
+fetch('colors.json')
+       .then(response => {
+           if (!response.ok) {
+               throw new Error(`HTTP error! status: ${response.status}`);
+           }
+           return response.json();
+       })
+       .then(colors => {
+           const root = document.documentElement;
+           for (const key in colors) {
+               // Set each key as a CSS variable: --key: value
+               root.style.setProperty(`--${key}`, colors[key]);
+           }
+       })
+       .catch(error => console.error('Error fetching or applying colors:', error));
 
 function collectInput() {
     
